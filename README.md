@@ -1,1 +1,1 @@
-# UCLA-CS-145---Intor-to-Data-Mining
+# UCLA-CS-145---Intro-to-Data-Mining
