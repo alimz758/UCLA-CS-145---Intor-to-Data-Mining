@@ -131,11 +131,7 @@ class SVM(object):
             #========================#
             # STRART YOUR CODE HERE  #
             #========================#
-            if self.kernel_name == 'polynomial_kernel':
-               kernel_matrix = polynomial_kernel(X, self.sv)
-            elif self.kernel_name == 'gaussian_kernel':
-                kernel_matrix = gaussian_kernel(X, self.sv)
-                
+            kernel_matrix = self.kernel(X, self.sv)  
             predicted_y = np.dot(kernel_matrix * self.sv_y, self.a)  + self.b      
             #========================#
             #   END YOUR CODE HERE   #
